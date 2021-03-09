@@ -29,7 +29,7 @@ a:visited {
 
 .headerMenu {
     width: 100vw;
-    height: 26vh;
+    height: 20vh;
 
     padding-top: 0;
 
@@ -63,7 +63,7 @@ a:visited {
     margin: 12px;
     padding: 0;
 
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .headerMenu div:hover {
