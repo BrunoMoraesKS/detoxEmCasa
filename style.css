@@ -165,18 +165,19 @@ header {
 
 @keyframes arrowMove {
 
-    0% {top: 270px;}
-    50% {top: 280px;}
-    100% {top: 270px;}
+    0% {top: -93vh;}
+    50% {top: -92vh;}
+    100% {top: -93vh;}
     
 }
 
 .headerArrow {
-    z-index: 2;
+    z-index: 888;
 
     position: relative;
+    display: inline-block;
 
-    left: 50vw;
+    left: 48vw;
 
     animation-name: arrowMove;
     animation-duration: 2s;
@@ -203,7 +204,7 @@ header {
 .headerTexts h1 {
     z-index: 3;
 
-    margin-top: 35%;
+    margin-top: 30%;
 
     font-size: 7em;
     color: #3E5641;
@@ -217,7 +218,7 @@ header {
     font-size: 1.5em;
     color: #3E5641;
 
-    margin-top: -5vw;
+    margin-top: -3vw;
 
     text-shadow: 5px 5px #00000010;
 }
