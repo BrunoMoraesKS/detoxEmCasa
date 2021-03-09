@@ -16,6 +16,8 @@ html {
 }
 
 
+
+
 a {
     text-decoration: none;
 }
@@ -165,19 +167,19 @@ header {
 
 @keyframes arrowMove {
 
-    0% {top: -93vh;}
-    50% {top: -92vh;}
-    100% {top: -93vh;}
+    0% {top: 90vh;}
+    50% {top: 89vh;}
+    100% {top: 90vh;}
     
 }
 
 .headerArrow {
     z-index: 888;
 
-    position: relative;
+    position: absolute;
     display: inline-block;
 
-    left: 48vw;
+    left: 49vw;
 
     animation-name: arrowMove;
     animation-duration: 2s;
@@ -186,17 +188,11 @@ header {
 }
 
 .headerTexts {
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
+    width: 100vw;
 
-    width: 98vw;
-    height: 80vh;
+    position: absolute;
 
-    position: relative;
-
-    top: -101%;
+    top: 20vh;
 
     text-align: center;
 }
@@ -218,7 +214,7 @@ header {
     font-size: 1.5em;
     color: #3E5641;
 
-    margin-top: -3vw;
+    margin-top: -2%;
 
     text-shadow: 5px 5px #00000010;
 }
@@ -402,27 +398,201 @@ footer {
 
 
 
+@media (min-width: 481px) {
+    html {
+        max-width: 768px;
+    }
+
+    .headerTexts h1 {    
+        margin-top: 20vh;
+    
+        font-size: 7.5em;
+        
+        line-height: 105px;
+    
+        text-shadow: 5px 5px #00000010;
+    }
+    
+    .headerTexts p {
+        font-size: 1.5em;
+    
+        margin-top: 2%;
+    }
+
+    .dontShow {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    html {
+        max-width: 1022px;
+    }
+
+    .headerTexts h1 {
+        margin-top: 18vh;
+    
+        font-size: 9em;
+
+        line-height: 120px;
+    }
+    
+    .headerTexts p {
+        margin-top: 1vw;
+    }
+
+    .dontShow {
+        display: none;
+    }
+}
+
+@media (min-width: 1023px) {
+    * {
+        max-width: 1200px;
+    }
+    
+    html {
+        max-width: 1200px;
+        margin: auto;
+
+        background-color: #f5e1bc50;
+    }
+
+    body {
+        background-color: #ffffff;
+    }
+
+
+    .headerTexts h1 {
+        margin-top: 18vh;
+    
+        font-size: 10em;
+
+        line-height: 125px;
+    }
+    
+    .headerTexts p {
+        margin-top: 1vh;
+        font-size: 2em;
+    }
+
+    .dontShow {
+        display: inline-block;
+    }
+
+    .images {
+        width: 33%;
+        height: 400px;
+    }
+
+    .headerMenu p {
+        font-size: 2.5em;
+    }
+
+    .topButton {
+
+        width: 17vw;
+        max-width: 130px;
+        height: 4%;
+        max-height: 50px;
+
+        top: 94%;
+        left: 84vw;
+
+    }
+    
+    .topButton h3 {
+        display: inline-block;
+    
+        font-size: 1.5em;
+
+    }
+    
+    .topButtonImage {
+        max-width: 50px;
+    }
+
+    .iThree {
+        padding: 0;
+        padding: 35px 0px;
+    }
+
+    .iEleven {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+
+    .iTwelve {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+
+    .iNine {
+        padding: 35px 0px;
+    }
+
+    .iTen {
+        padding: 35px 0px;
+    }
+
+
+    .steps {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr;
+    }
+
+    .step1 {
+        border-right: 1px solid #3E5641;
+    }
+
+    .step2 {
+        border-right: 1px solid #3E5641;
+    }
+
+    .contact h2 {
+        font-size: 3.5em;
+    }
+
+    .whatIsIt h3 {
+        text-align: center;
+    
+        font-size: 3em;
+    
+        padding: 40px 15px;
+    }
+    
+    .centerP {
+        line-height: 45px;
+    
+        font-size: 1.5em;
+    
+        padding: 0px 25px;
+        padding-bottom: 25px;
+    }
+
+    .justifyP {
+        font-size: 1.5em;
+    
+        padding: 0px 40px;
+        padding-bottom: 25px;
+    }
+
+    .overImageText h2 {
+        padding-top: 20px;
+    
+        font-size: 3.2em;
+    }
+    
+
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 320px — 480px: Mobile devices
-
-481px — 768px: iPads, Tablets
+/* 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
+1025px — 1200px: Desktops, large screens */
