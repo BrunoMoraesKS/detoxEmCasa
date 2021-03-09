@@ -121,6 +121,10 @@ a:visited {
     border-radius: 5%;
 }
 
+.contactMenu p {
+    color: #ffffff;
+}
+
 .contactMenu a:visited {
     color: #ffffff;
 }
