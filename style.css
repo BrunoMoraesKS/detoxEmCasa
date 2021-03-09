@@ -1,0 +1,363 @@
+/* GLOBAL */
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
+
+html {
+    max-width: 480px;
+    background-color: #ffffff98;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3E5641;
+}
+
+/* MENU */
+
+.headerMenu {
+    width: 100vw;
+    height: 26vh;
+
+    padding-top: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #00000010;
+    color: #3E5641;
+}
+
+.headerMenu p {
+    font-size: 1.5em;
+}
+
+.headerMenu p:hover {
+    transition: 0.5s;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+}
+
+.headerMenu div {
+    margin: 12px;
+    padding: 0;
+
+    margin-top: -20px;
+}
+
+.headerMenu div:hover {
+    transition: 0.5s;
+
+    background-color: #007c34;
+
+    border-radius: 5%;
+}
+
+
+.contactMenu {
+    background-color: #007c34;
+
+    color: white;
+
+    border-radius: 5%;
+}
+
+.contactMenu a:visited {
+    color: #ffffff;
+}
+
+div .contactMenu:hover {
+    background-color: #3E5641;
+}
+
+.topBottomGradient {
+    width: 100vw;
+    height: 1vh;
+
+    background-image: linear-gradient(180deg, #00000010, #7db453);
+}
+
+/* HEADER */
+
+header {
+    overflow: hidden;
+}
+
+.firstHeader {
+
+    width: 100vw;
+    height: 80vh;
+    max-height: 720px;
+
+    background-color: #7db453;
+    
+}
+
+.renataPicture {
+    width: 300px;
+
+    position: relative;
+
+    left: 50px;
+    top: 65px;
+}
+
+@keyframes arrowMove {
+
+    0% {top: 270px;}
+    50% {top: 280px;}
+    100% {top: 270px;}
+    
+}
+
+.headerArrow {
+    position: relative;
+
+    left: 47vw;
+
+    animation-name: arrowMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+.firstHeader h1 {
+
+    position: relative;
+
+    top: 30%;
+    left: 200px;
+
+    font-size: 7em;
+
+    margin: -50px;
+    
+    line-height: 100px;
+
+    text-shadow: 5px 5px #00000010;
+}
+
+/* WHAT IS IT */
+
+.whatIsIt {
+    overflow: hidden;
+}
+
+.overImageText {
+    z-index: 1;
+
+    height: 0;
+
+    position: relative;
+    top: 50px;
+}
+
+.overImageText h2 {
+    text-align: center;
+    color: #ffffff;
+
+    padding-top: 20px;
+
+    font-size: 3em;
+}
+
+.whatIsIt h3 {
+    text-align: center;
+
+    font-size: 2em;
+
+    padding: 25px 15px;
+}
+
+.centerP {
+    text-align: center;
+
+    line-height: 35px;
+
+    font-size: 1em;
+
+    padding: 0px 15px;
+}
+
+.images {
+    z-index: -1;
+
+    width: 100vw;
+    height: 400px;
+
+}
+
+.iOne {
+    filter: brightness(85%);
+}
+
+.iTwo {
+    height: 680px;
+}
+
+.justifyP {
+    text-align: justify;
+
+    font-size: 1em;
+
+
+    padding: 0px 30px;
+}
+
+.iThree {
+    padding: 35px 0px;
+    height: 450px;
+}
+
+/* HOW IT WORKS */
+
+.iFour {
+    padding-top: 45px;
+    filter: brightness(85%);
+
+    padding-bottom: 20px;
+}
+
+.howItWorks {
+    overflow: hidden;
+}
+
+.steps {
+    width: 100vw;
+}
+
+.steps h3 {
+    text-align: center;
+
+    font-size: 2.5em;
+
+    border-top: 1px solid #3E5641;
+
+    padding-top: 35px;
+}
+
+.steps img {
+
+    width: 280px;
+
+    transform: translate(35%, 15%);
+
+    border-radius: 50%;
+}
+
+.steps p {
+    text-align: center;
+
+    padding-top: 90px;
+    padding-bottom: 30px;
+
+    font-size: 1.8em;
+}
+
+/* CONTACT */
+
+.contact {
+    overflow: hidden;
+
+    padding-bottom: 100px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    border-top: 1px solid #3E5641;
+}
+
+.icons {
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    justify-content: space-between;
+}
+
+.icon {
+    width: 70%;
+
+    padding: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    overflow: hidden;
+
+    width: 100%;
+    height: 287px;
+
+    background-color: #3E5641;
+}
+
+.footerH3 {
+    position: relative;
+    display: inline-block;
+
+    font-size: 0.8em;
+    text-align: center;
+
+    left: 50%;
+    transform: translate(-50%, 1000%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 320px — 480px: Mobile devices
+
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
