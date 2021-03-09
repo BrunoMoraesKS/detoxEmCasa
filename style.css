@@ -396,7 +396,11 @@ footer {
 
 
 
-
+@media (min-width: 250px) {
+    .dontShow {
+        display: none;
+    }
+}
 
 @media (min-width: 481px) {
     html {
