@@ -592,7 +592,13 @@ footer {
     
         font-size: 3.2em;
     }
-    
+
+    .footerH3 {
+
+        font-size: 1em;
+        text-align: center
+
+    }
 
 }
 
